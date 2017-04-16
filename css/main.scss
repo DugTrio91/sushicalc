@@ -1,0 +1,136 @@
+$green: #b2d243;
+$blue: #70cef4;
+$purple: #70318e;
+$orange: #f16a33;
+$pink: #e01d8d;
+$grey: #a9adb1;
+$yellow: #fecc30;
+$sumo: #010101;
+@font-face {
+    font-family: primary;
+    src: url(../fonts/gotham-book.ttf);
+}
+
+body {
+    margin: 0;
+    text-align: center;
+    font-family: primary;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+#green-plate {
+    background: $green;
+    .minus-plate i,
+    .plus-plate i {
+        color: $green;
+    }
+}
+
+#blue-plate {
+    background: $blue;
+    .minus-plate i,
+    .plus-plate i {
+        color: $blue;
+    }
+}
+
+#purple-plate {
+    background: $purple;
+    .minus-plate i,
+    .plus-plate i {
+        color: $purple;
+    }
+}
+
+#orange-plate {
+    background: $orange;
+    .minus-plate i,
+    .plus-plate i {
+        color: $orange;
+    }
+}
+
+#pink-plate {
+    background: $pink;
+    .minus-plate i,
+    .plus-plate i {
+        color: $pink;
+    }
+}
+
+#grey-plate {
+    background: $grey;
+    .minus-plate i,
+    .plus-plate i {
+        color: $grey;
+    }
+}
+
+#yellow-plate {
+    background: $yellow;
+    .minus-plate i,
+    .plus-plate i {
+        color: $yellow;
+    }
+}
+
+#sumo-plate {
+    background: $sumo;
+    .minus-plate i,
+    .plus-plate i {
+        color: $sumo;
+    }
+}
+
+.sushi-prices {
+    .sushi-button {
+        padding: 3.8vh 0;
+        font-size: 1.5em;
+        vertical-align: middle;
+        color: #fff;
+    }
+    .price {
+        margin: 0px 20vw;
+    }
+}
+
+input[type=text]:not(input[type=text]:last-child){
+    background: none;
+    border: none;
+    width: 40px;
+    visibility: hidden;
+    font-size: 1em;
+    text-align: center;
+    color: #fff;
+    filter: opacity(0.5)
+}
+
+.minus-plate i,
+.plus-plate i {
+    cursor: pointer;
+    background: #fff;
+    font-size: 1.1em;
+    padding: 8px 10px 4px 10px;
+    border-radius: 50%;
+    filter: opacity(50%)
+}
+
+.sushi-total{
+    position: fixed;
+    bottom: 0;
+    background: $sumo;
+    color: #fff;
+    width: 100%;
+    padding: 2.5vh 0;
+    font-size: 2em;
+    
+}
+
+.minus-plate{
+    visibility: hidden;
+}

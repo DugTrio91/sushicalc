@@ -1,0 +1,102 @@
+@font-face {
+  font-family: primary;
+  src: url(../fonts/gotham-book.ttf); }
+
+body {
+  margin: 0;
+  text-align: center;
+  font-family: primary;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+#green-plate {
+  background: #b2d243; }
+  #green-plate .minus-plate i,
+  #green-plate .plus-plate i {
+    color: #b2d243; }
+
+#blue-plate {
+  background: #70cef4; }
+  #blue-plate .minus-plate i,
+  #blue-plate .plus-plate i {
+    color: #70cef4; }
+
+#purple-plate {
+  background: #70318e; }
+  #purple-plate .minus-plate i,
+  #purple-plate .plus-plate i {
+    color: #70318e; }
+
+#orange-plate {
+  background: #f16a33; }
+  #orange-plate .minus-plate i,
+  #orange-plate .plus-plate i {
+    color: #f16a33; }
+
+#pink-plate {
+  background: #e01d8d; }
+  #pink-plate .minus-plate i,
+  #pink-plate .plus-plate i {
+    color: #e01d8d; }
+
+#grey-plate {
+  background: #a9adb1; }
+  #grey-plate .minus-plate i,
+  #grey-plate .plus-plate i {
+    color: #a9adb1; }
+
+#yellow-plate {
+  background: #fecc30; }
+  #yellow-plate .minus-plate i,
+  #yellow-plate .plus-plate i {
+    color: #fecc30; }
+
+#sumo-plate {
+  background: #010101; }
+  #sumo-plate .minus-plate i,
+  #sumo-plate .plus-plate i {
+    color: #010101; }
+
+.sushi-prices .sushi-button {
+  padding: 3.8vh 0;
+  font-size: 1.5em;
+  vertical-align: middle;
+  color: #fff; }
+
+.sushi-prices .price {
+  margin: 0px 20vw; }
+
+input[type=text]:not(input[type=text]:last-child) {
+  background: none;
+  border: none;
+  width: 40px;
+  visibility: hidden;
+  font-size: 1em;
+  text-align: center;
+  color: #fff;
+  filter: opacity(0.5); }
+
+.minus-plate i,
+.plus-plate i {
+  cursor: pointer;
+  background: #fff;
+  font-size: 1.1em;
+  padding: 8px 10px 4px 10px;
+  border-radius: 50%;
+  filter: opacity(50%); }
+
+.sushi-total {
+  position: fixed;
+  bottom: 0;
+  background: #010101;
+  color: #fff;
+  width: 100%;
+  padding: 2.5vh 0;
+  font-size: 2em; }
+
+.minus-plate {
+  visibility: hidden; }
