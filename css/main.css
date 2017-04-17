@@ -70,11 +70,10 @@ body {
 .sushi-prices .price {
   margin: 0px 20vw; }
 
-input[type=text]:not(input[type=text]:last-child) {
+input[type=text] {
   background: none;
   border: none;
   width: 40px;
-  visibility: hidden;
   font-size: 1em;
   text-align: center;
   color: #fff;
@@ -97,6 +96,3 @@ input[type=text]:not(input[type=text]:last-child) {
   width: 100%;
   padding: 2.5vh 0;
   font-size: 2em; }
-
-.minus-plate {
-  visibility: hidden; }
