@@ -94,6 +94,9 @@ body {
         vertical-align: middle;
         color: #fff;
     }
+    .sushi-button:last-child{
+        margin-bottom: 12.5vh;
+    }
     .price {
         margin: 0px 20vw;
     }
@@ -102,11 +105,15 @@ body {
 input[type=text]{
     background: none;
     border: none;
-    width: 40px;
+    width: 30px;
     font-size: 1em;
     text-align: center;
     color: #fff;
     filter: opacity(0.5)
+}
+
+input[type=text]:last-child{
+    width: 120px;
 }
 
 .minus-plate i,
