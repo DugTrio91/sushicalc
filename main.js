@@ -144,5 +144,5 @@ var yellowTotalBox = document.getElementById('yellow-total');
 
    function calculateTotal() {
         totalBill = greenCost + blueCost + purpleCost + orangeCost + pinkCost + greyCost + yellowCost;
-        totalBillBox.value = £ + totalBill;
+        totalBillBox.value = totalBill;
    }
