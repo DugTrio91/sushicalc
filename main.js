@@ -1,26 +1,27 @@
 var totalBill = 0;
 var totalBillBox = document.getElementById('total');
 
-var greenTotal = 0;
-var greenCost = 0;
+var greenTotal = 0
+    , greenCost = 0
+    , blueTotal = 0
+    , blueCost = 0
+    , purpleTotal = 0
+    , purpleCost = 0
+    , orangeTotal = 0
+    , orangeCost = 0
+    , pinkTotal = 0
+    , pinkCost = 0
+    , greyTotal = 0
+    , greyCost = 0
+    , yellowTotal = 0
+    , yellowCost = 0;
+
 var greenTotalBox = document.getElementById('green-total');
-var blueTotal = 0;
-var blueCost = 0;
 var blueTotalBox = document.getElementById('blue-total');
-var purpleTotal = 0;
-var purpleCost = 0;
 var purpleTotalBox = document.getElementById('purple-total');
-var orangeTotal = 0;
-var orangeCost = 0;
 var orangeTotalBox = document.getElementById('orange-total');
-var pinkTotal = 0;
-var pinkCost = 0;
 var pinkTotalBox = document.getElementById('pink-total');
-var greyTotal = 0;
-var greyCost = 0;
 var greyTotalBox = document.getElementById('grey-total');
-var yellowTotal = 0;
-var yellowCost = 0;
 var yellowTotalBox = document.getElementById('yellow-total');
 
     //green plate function
@@ -29,6 +30,10 @@ var yellowTotalBox = document.getElementById('yellow-total');
         greenTotalBox.value = greenTotal;
         greenCost = greenTotal * 1.90;
         calculateTotal();
+        if (greenTotal > 0){
+            document.getElementById('green-minus').style.visibility = 'visible';
+            greenTotalBox.style.visibility = 'visible';
+        }
     }
     
     function greenMinus() {
@@ -37,6 +42,10 @@ var yellowTotalBox = document.getElementById('yellow-total');
             greenTotalBox.value = greenTotal;
             greenCost = greenTotal * 1.90;
             calculateTotal();
+            } 
+        if (greenTotal == 0){
+                document.getElementById('green-minus').style.visibility = 'hidden';
+                greenTotalBox.style.visibility = 'hidden';
             }
     }
 
@@ -46,6 +55,10 @@ var yellowTotalBox = document.getElementById('yellow-total');
         blueTotalBox.value = blueTotal;
         blueCost = blueTotal * 2.50;
         calculateTotal();
+        if (blueTotal > 0){
+            document.getElementById('blue-minus').style.visibility = 'visible';
+            blueTotalBox.style.visibility = 'visible';
+        }
     }
     
     function blueMinus() {
@@ -55,6 +68,10 @@ var yellowTotalBox = document.getElementById('yellow-total');
             blueCost = blueTotal * 2.50;
             calculateTotal();
             }
+        if (blueTotal == 0){
+                document.getElementById('blue-minus').style.visibility = 'hidden';
+                blueTotalBox.style.visibility = 'hidden';
+            }
     }
 
     //purple plate function
@@ -63,6 +80,10 @@ var yellowTotalBox = document.getElementById('yellow-total');
         purpleTotalBox.value = purpleTotal;
         purpleCost = purpleTotal * 3.10;
         calculateTotal();
+        if (purpleTotal > 0){
+            document.getElementById('purple-minus').style.visibility = 'visible';
+            purpleTotalBox.style.visibility = 'visible';
+        }
     }
     
     function purpleMinus() {
@@ -72,6 +93,10 @@ var yellowTotalBox = document.getElementById('yellow-total');
             purpleCost = purpleTotal * 3.10;
             calculateTotal();
             }
+        if (purpleTotal == 0){
+                document.getElementById('purple-minus').style.visibility = 'hidden';
+                purpleTotalBox.style.visibility = 'hidden';
+            }
     }
 
     //orange plate function
@@ -80,6 +105,10 @@ var yellowTotalBox = document.getElementById('yellow-total');
         orangeTotalBox.value = orangeTotal;
         orangeCost = orangeTotal * 3.60;
         calculateTotal();
+        if (orangeTotal > 0){
+            document.getElementById('orange-minus').style.visibility = 'visible';
+            orangeTotalBox.style.visibility = 'visible';
+        }
     }
     
     function orangeMinus() {
@@ -89,6 +118,10 @@ var yellowTotalBox = document.getElementById('yellow-total');
             orangeCost = orangeTotal * 3.60;
             calculateTotal();
             }
+        if (orangeTotal == 0){
+                document.getElementById('orange-minus').style.visibility = 'hidden';
+                orangeTotalBox.style.visibility = 'hidden';
+            }
     }
 
     //pink plate function
@@ -97,6 +130,10 @@ var yellowTotalBox = document.getElementById('yellow-total');
         pinkTotalBox.value = pinkTotal;
         pinkCost = pinkTotal * 4.10;
         calculateTotal();
+        if (pinkTotal > 0){
+            document.getElementById('pink-minus').style.visibility = 'visible';
+            pinkTotalBox.style.visibility = 'visible';
+        }
     }
     
     function pinkMinus() {
@@ -106,6 +143,10 @@ var yellowTotalBox = document.getElementById('yellow-total');
             pinkCost = pinkTotal * 4.10;
             calculateTotal();
             }
+        if (pinkTotal == 0){
+                document.getElementById('pink-minus').style.visibility = 'hidden';
+                pinkTotalBox.style.visibility = 'hidden';
+            }
     }
 
     //grey plate function
@@ -114,6 +155,10 @@ var yellowTotalBox = document.getElementById('yellow-total');
         greyTotalBox.value = greyTotal;
         greyCost = greyTotal * 5.00;
         calculateTotal();
+        if (greyTotal > 0){
+            document.getElementById('grey-minus').style.visibility = 'visible';
+            greyTotalBox.style.visibility = 'visible';
+        }
     }
     
     function greyMinus() {
@@ -123,6 +168,10 @@ var yellowTotalBox = document.getElementById('yellow-total');
             greyCost = greyTotal * 5.00;
             calculateTotal();
             }
+        if (greyTotal == 0){
+                document.getElementById('grey-minus').style.visibility = 'hidden';
+                greyTotalBox.style.visibility = 'hidden';
+            }
     }
 
     //yellow plate function
@@ -131,6 +180,10 @@ var yellowTotalBox = document.getElementById('yellow-total');
         yellowTotalBox.value = yellowTotal;
         yellowCost = yellowTotal * 6.00;
         calculateTotal();
+        if (yellowTotal > 0){
+            document.getElementById('yellow-minus').style.visibility = 'visible';
+            yellowTotalBox.style.visibility = 'visible';
+        }
     }
     
     function yellowMinus() {
@@ -140,9 +193,13 @@ var yellowTotalBox = document.getElementById('yellow-total');
             yellowCost = yellowTotal * 6.00;
             calculateTotal();
             }
+        if (yellowTotal == 0){
+                document.getElementById('yellow-minus').style.visibility = 'hidden';
+                yellowTotalBox.style.visibility = 'hidden';
+            }
     }
 
    function calculateTotal() {
         totalBill = greenCost + blueCost + purpleCost + orangeCost + pinkCost + greyCost + yellowCost;
-        totalBillBox.value = totalBill;
+        totalBillBox.value = '£' + totalBill.toFixed(2);
    }

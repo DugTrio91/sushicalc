@@ -116,6 +116,10 @@ input[type=text]:last-child{
     width: 120px;
 }
 
+.minus-plate, .tally{
+    visibility: hidden;
+}
+
 .minus-plate i,
 .plus-plate i {
     cursor: pointer;
